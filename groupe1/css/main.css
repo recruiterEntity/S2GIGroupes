@@ -1,0 +1,209 @@
+:root{
+    --globalMargin:100px;
+    --loginColor:dodgerblue;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+a{
+    color: inherit;
+}
+body>header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--globalMargin);
+    border-top: 3px solid darkorange;
+    border-bottom: 1px solid rgb(215, 213, 213);
+    box-shadow: 0px 1px rgb(242, 241, 241);
+}
+.logo{
+    height: 50px;
+    
+}
+body>header>div:first-child{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+body>header>div:last-child{
+    margin-top: 15px;
+    font-weight: bold;
+}
+body>header button{
+    font-weight: inherit;
+    padding: 10px;
+    border-radius: 3px;
+}
+.signup{
+    background-color: #0a95ff;
+    color: white;
+    border: 0px;
+}
+
+body>header input{
+  margin-top: 20px;
+  width: 60%;
+  padding: 6px;
+}
+body>header button:first-child{
+    border: 0px;
+    background: unset;
+    color: var(--loginColor);
+}
+main{
+    display: flex;
+    margin: 0px var(--globalMargin);
+}
+main>nav{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 20px;
+    border-right: 1px solid #d7dbdd;
+}
+main>nav ul{
+    margin-left: 30px;
+}
+.homeLink, .publicLink, main>nav>div h2{
+    padding: 10px 5px;
+    
+}
+.homeLink{
+    color:#63696e;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.publicLink{
+    color:#93999f;
+    font-size: 0.8em;
+}
+main>nav>div h2{
+    background-color: whitesmoke;
+    font-size: 1em;
+    font-weight: bolder;
+    border-right: 2px solid darkorange;
+}
+main>nav li{
+    display: block;
+    color:#63696e;
+    font-weight: 600;
+    padding: 8px;
+}
+.section{
+    flex:1;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+.section header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7dbdd;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.askQuestion{
+    background-color: #0a95ff;
+    color: white;
+    border: 0px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.viewed{
+    color: #93999f;
+}
+.viewed span{
+    color: #63696e;
+}
+.ad{
+    width: 70%;
+}
+.ad img{
+    width: 100%;
+}
+.content{
+    display: flex;
+    gap:30px;
+}
+.ad>div{
+    display: flex;
+}
+section .vote{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+section .vote button{
+    border: 0px;
+    font-size: 50px;
+    color: #93999f;
+    background-color: unset;
+}
+section .vote p{
+    font-size: 1.2em;
+    color: #63696e;
+}
+.post{
+    margin-top: 10px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.highlight{
+    background: rgb(228, 226, 226);
+    padding: 0px 4px;
+}
+.post img{
+    width: 270px;
+}
+
+.post li{
+    display: inline-block;
+
+}
+.post li button{
+    border: 0px;
+    color: rgb(60,127,250);
+    background-color:rgb(229, 242, 255);
+    padding: 6px;
+}
+/*.post ul{
+    display: flex;
+    list-style: none;
+}*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.866);
+    height: 150px;
+    padding: 35px 164px;
+    color: #9ea7ae;
+}
+footer>div{
+    flex:1;
+}
+footer h4{
+    color:#b8bdc0;
+    margin-bottom: 14px;
+}
+footer li{
+    display: block;
+    margin-bottom: 8px;
+}
+.socialMedia li{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.8em;
+}
+.socialMedia p{
+    font-size: 0.7em;
+    margin-top: 25px;
+}
+.socialMedia p span{
+    color:#b8c2c9; ;
+}
